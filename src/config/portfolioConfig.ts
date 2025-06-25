@@ -1,5 +1,3 @@
-import polydoc_chinese from "../../public/polydoc_chinese.png";
-
 export type Skill = {
   name: string;
   lang: string[];
