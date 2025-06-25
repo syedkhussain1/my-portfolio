@@ -131,9 +131,12 @@ const Index = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.4 }}
-                        
                       >
-                        {portfolioConfig.about}
+                        {portfolioConfig.about} <br />
+                        <br />
+                        {portfolioConfig.domains} <br />
+                        <br />
+                        {portfolioConfig.description} <br />
                       </motion.p>
                     </div>
                   </PixelWindow>
@@ -230,7 +233,7 @@ const Index = () => {
                     className="font-pixel text-base text-white mb-4"
                     whileHover={{ color: "#61DCFF" }}
                   >
-                    {`<>` }EXPERIENCE{`</>`}
+                    EXPERIENCE
                   </motion.h2>
                   <motion.div
                     variants={containerVariants}
@@ -241,37 +244,6 @@ const Index = () => {
                     {portfolioConfig.experience.map((exp, index) => (
                       <motion.div key={index} variants={itemVariants}>
                         <PixelExperienceItem experience={exp} />
-                      </motion.div>
-                    ))}
-                  </motion.div>
-                </div>
-              </PixelWindow>
-            </motion.div>
-
-            {/* Education */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              whileHover={{ y: -3 }}
-            >
-              <PixelWindow title="education.html">
-                <div>
-                  <motion.h2
-                    className="font-pixel text-base text-white mb-4"
-                    whileHover={{ color: "#61DCFF" }}
-                  >
-                    EDUCATION
-                  </motion.h2>
-                  <motion.div
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.1 }}
-                  >
-                    {portfolioConfig.education.map((edu, index) => (
-                      <motion.div key={index} variants={itemVariants}>
-                        <PixelEducationItem education={edu} index={index} />
                       </motion.div>
                     ))}
                   </motion.div>
@@ -318,6 +290,37 @@ const Index = () => {
                     <Link to="/projects" className="pixel-btn inline-block">
                       See All Projects
                     </Link>
+                  </motion.div>
+                </div>
+              </PixelWindow>
+            </motion.div>
+
+            {/* Education */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              whileHover={{ y: -3 }}
+            >
+              <PixelWindow title="education.html">
+                <div>
+                  <motion.h2
+                    className="font-pixel text-base text-white mb-4"
+                    whileHover={{ color: "#61DCFF" }}
+                  >
+                    EDUCATION
+                  </motion.h2>
+                  <motion.div
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.1 }}
+                  >
+                    {portfolioConfig.education.map((edu, index) => (
+                      <motion.div key={index} variants={itemVariants}>
+                        <PixelEducationItem education={edu} index={index} />
+                      </motion.div>
+                    ))}
                   </motion.div>
                 </div>
               </PixelWindow>

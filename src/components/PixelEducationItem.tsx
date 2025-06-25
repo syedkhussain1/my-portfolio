@@ -1,41 +1,42 @@
-
-import React, { useRef } from 'react';
-import { Education } from '@/config/portfolioConfig';
-import { motion, useInView } from 'framer-motion';
+import React, { useRef } from "react";
+import { Education } from "@/config/portfolioConfig";
+import { motion, useInView } from "framer-motion";
 
 interface PixelEducationItemProps {
   education: Education;
   index: number;
 }
 
-const PixelEducationItem: React.FC<PixelEducationItemProps> = ({ education, index }) => {
+const PixelEducationItem: React.FC<PixelEducationItemProps> = ({
+  education,
+  index,
+}) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.5 });
-  
+
   return (
-    <motion.div 
+    <motion.div
       ref={ref}
       className="mb-4"
       initial={{ opacity: 0, y: 20 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-      transition={{ 
+      transition={{
         duration: 0.5,
         delay: index * 0.1,
-        ease: "easeOut"
+        ease: "easeOut",
       }}
     >
-      <motion.h3 
+      <motion.h3
         className="font-pixel text-xs text-white mb-1"
         whileHover={{ color: "#61DCFF" }}
       >
-        {`<>` }{education.title} {`</>`}
+        {education.title}
       </motion.h3>
-      <motion.p 
+      <motion.p
         className="font-mono text-xs mb-1"
         whileHover={{ x: 3 }}
-      >
-      </motion.p>
-      <motion.p 
+      ></motion.p>
+      <motion.p
         className="font-mono text-xs text-gray-400 mb-1"
         whileHover={{ x: 3 }}
       >
