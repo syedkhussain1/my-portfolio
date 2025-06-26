@@ -51,7 +51,7 @@ export interface PortfolioConfig {
 
 const portfolioConfig: PortfolioConfig = {
   name: "Syed Hussain",
-  title: "Software Engineer | AI Enthusiast",
+  title: "Software Engineer | AI Enthusiast | Product Owner",
   avatar:
     "https://res.cloudinary.com/dvajcjf2h/image/upload/v1748427402/WhatsApp_Image_2025-05-28_at_12.07.41_1_pnjsu6.webp",
   about: "11+ years in tech - 5+ years in software dev",
