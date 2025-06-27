@@ -55,9 +55,10 @@ const portfolioConfig: PortfolioConfig = {
   avatar:
     "https://res.cloudinary.com/dvajcjf2h/image/upload/v1748427402/WhatsApp_Image_2025-05-28_at_12.07.41_1_pnjsu6.webp",
   about: "11+ years in tech - 5+ years in software dev",
-  domains: "Domains : eSignatures, Ad Tech, Automotive, FinTech",
   description:
     "I am fullstack developer building scalable solutions & I enjoy automating tasks that will help me be more productive. I am also a big fan of AI & I enjoy building AI solutions.",
+  domains:
+    "I have worked in domains like eSignatures, Ad Tech, Automotive, FinTech",
   theme: {
     primary: "#7B61FF",
     secondary: "#FF61DC",
@@ -200,7 +201,7 @@ const portfolioConfig: PortfolioConfig = {
         "Tailwind CSS",
         "TypeScript",
       ],
-      link: "https://crackit-ai-khaki.vercel.app/",
+      link: "https://polydoc-nextjs.vercel.app/",
     },
     {
       title: "Postify",
