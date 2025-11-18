@@ -54,7 +54,7 @@ const portfolioConfig: PortfolioConfig = {
   title: "Product Manager | AI Enthusiast | Software Engineer",
   avatar:
     "https://res.cloudinary.com/dvajcjf2h/image/upload/v1748427402/WhatsApp_Image_2025-05-28_at_12.07.41_1_pnjsu6.webp",
-  about: "Hey there! I am a Product Manager passionate about scaling SaaS products that people love. Before moving into product, I worked as a full-stack developer building scalable solutions from the ground up. I am exited about the product and the user problem it is solving.",
+  about: "Hey there! I am a Product Manager passionate about scaling SaaS products that people love. Before moving into product, I worked as a full-stack developer building scalable solutions from the ground up. I am exited about software product's and how it simplifies our life's.",
   
   description: "I have worked in tech for 12+ years - as PM, Developer, Tech Support, QA. Making me a holistic problem solver.",
   domains:
