@@ -167,58 +167,6 @@ const Index = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              whileHover={{ y: -3 }}
-            >
-              <PixelWindow title="skills.json">
-                <div>
-                  <div className="mt-8">
-                    <motion.h2
-                      className="font-pixel text-base text-white mb-4"
-                      whileHover={{ color: "#61DCFF" }}
-                    >
-                      TECHNICAL SKILLS
-                    </motion.h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-3">
-                      {portfolioConfig.skills.map((skill, index) => (
-                        <motion.div
-                          key={index}
-                          className="flex justify-between p-2 rounded w-full"
-                          initial={{ opacity: 0, x: -20 }}
-                          animate={{ opacity: 1, x: 0 }}
-                          transition={{ delay: 0.5 + index * 0.1 }}
-                          whileHover={{
-                            backgroundColor: "rgba(123, 97, 255, 0.2)",
-                            scale: 1.02,
-                            transition: { duration: 0.2 },
-                          }}
-                        >
-                          <pre className="bg-zinc-900 text-white p-4 rounded-md text-sm font-mono w-full">
-                            {JSON.stringify(
-                              {
-                                [skill.name]: {
-                                  ...(skill.lang?.length
-                                    ? { languages: skill.lang }
-                                    : {}),
-                                  ...(skill.frameworks?.length
-                                    ? { frameworks: skill.frameworks }
-                                    : {}),
-                                },
-                              },
-                              null,
-                              2
-                            )}
-                          </pre>
-                        </motion.div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </PixelWindow>
-            </motion.div>
 
             {/* Experience */}
             <motion.div
@@ -322,6 +270,60 @@ const Index = () => {
                       </motion.div>
                     ))}
                   </motion.div>
+                </div>
+              </PixelWindow>
+            </motion.div>
+            
+            {/* TECHNICAL SKILLS */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              whileHover={{ y: -3 }}
+            >
+              <PixelWindow title="skills.json">
+                <div>
+                  <div className="mt-8">
+                    <motion.h2
+                      className="font-pixel text-base text-white mb-4"
+                      whileHover={{ color: "#61DCFF" }}
+                    >
+                      TECHNICAL SKILLS
+                    </motion.h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-3">
+                      {portfolioConfig.skills.map((skill, index) => (
+                        <motion.div
+                          key={index}
+                          className="flex justify-between p-2 rounded w-full"
+                          initial={{ opacity: 0, x: -20 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          transition={{ delay: 0.5 + index * 0.1 }}
+                          whileHover={{
+                            backgroundColor: "rgba(123, 97, 255, 0.2)",
+                            scale: 1.02,
+                            transition: { duration: 0.2 },
+                          }}
+                        >
+                          <pre className="bg-zinc-900 text-white p-4 rounded-md text-sm font-mono w-full">
+                            {JSON.stringify(
+                              {
+                                [skill.name]: {
+                                  ...(skill.lang?.length
+                                    ? { languages: skill.lang }
+                                    : {}),
+                                  ...(skill.frameworks?.length
+                                    ? { frameworks: skill.frameworks }
+                                    : {}),
+                                },
+                              },
+                              null,
+                              2
+                            )}
+                          </pre>
+                        </motion.div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </PixelWindow>
             </motion.div>
