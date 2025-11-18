@@ -51,12 +51,12 @@ export interface PortfolioConfig {
 
 const portfolioConfig: PortfolioConfig = {
   name: "Syed Hussain",
-  title: "Product Owner | AI Enthusiast | Software Engineer",
+  title: "Product Manager | AI Enthusiast | Software Engineer",
   avatar:
     "https://res.cloudinary.com/dvajcjf2h/image/upload/v1748427402/WhatsApp_Image_2025-05-28_at_12.07.41_1_pnjsu6.webp",
-  about: "11+ years in tech - 5+ years in software dev",
+  about: "11+ years in tech - as PM, Developer, Tech Support, QA. Making me a holistic problem solver.",
   description:
-    "I am fullstack developer building scalable solutions & I enjoy automating tasks that will help me be more productive. I am also a big fan of AI & I enjoy building AI solutions.",
+    "Hey there! I am a Product Manager passionate about scaling SaaS products that people love. Before moving into product, I worked as a full-stack developer building scalable solutions from the ground up. I am exited about the product and the user problem it is solving.",
   domains:
     "I have worked in domains like eSignatures, Ad Tech, Automotive, FinTech",
   theme: {
@@ -75,6 +75,12 @@ const portfolioConfig: PortfolioConfig = {
     },
   ],
   experience: [
+    {
+      title: "Product Manager",
+      company: "Docusign",
+      location: "Paris, France",
+      period: "2023 - 2025",
+    },
     {
       title: "Software Developer Full-Stack",
       company: "Docusign",
@@ -146,7 +152,7 @@ const portfolioConfig: PortfolioConfig = {
     {
       platform: "linkedin",
       username: "devsh01",
-      url: "https://www.linkedin.com/in/devsh01/",
+      url: "https://www.linkedin.com/in/pmsh1",
     },
   ],
   projects: [
